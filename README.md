@@ -1,6 +1,6 @@
 # Linux Security Wizard
 
-A cross-distribution, fully interactive hardening utility that automates the checklist from Toolsvana's "turn your server into a fortress" guide. The script walks operators through every major decision—user creation, SSH lockdown, firewalls, Fail2Ban, multifactor authentication, /tmp hardening—and adapts to the detected package manager (APT, DNF/YUM, Zypper, Pacman).
+A cross-distribution, fully interactive hardening utility that automates a comprehensive server lockdown checklist. The script walks operators through every major decision—user creation, SSH lockdown, firewalls, Fail2Ban, multifactor authentication, /tmp hardening—and adapts to the detected package manager (APT, DNF/YUM, Zypper, Pacman).
 
 ## Features
 
@@ -36,21 +36,3 @@ sudo ./harden_server.sh
 
 Keep your original SSH session open while testing a second session after each change—especially when altering SSH ports, authentication methods, or enabling 2FA.
 
-## Development
-
-```bash
-# Initialize git (already done locally)
-git init
-
-git add harden_server.sh README.md
-git commit -m "Initial hardening toolkit"
-
-git remote add origin https://github.com/AFN7/Linux-Security-Wizard.git
-git push -u origin main
-```
-
-> **Note:** Replace `main` with your preferred branch name if the remote repository expects something else.
-
-## License
-
-MIT. See `LICENSE` (add one if required).
